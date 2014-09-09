@@ -5,7 +5,7 @@ public class TurtleWorld
     public static void main(String[] args) 
         throws InterruptedException
     {
-        World turtleWorld = new World();
+        World turtleWorld = new World(1750, 1000);
         
         Turtle turtle = new Turtle(turtleWorld);
         turtle.setColor(Color.magenta);
@@ -57,31 +57,35 @@ public class TurtleWorld
         turtle9.setWidth(10);
         turtle9.turn(324);
         
-        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-
-        for(int x : numbers)
+        int count = 300;
+        int d = 10;
+        int f = 10;
+        while (count > 0)
         {
-            turtle.forward(30);
-            turtle1.forward(30);
-            turtle2.forward(30);
-            turtle3.forward(30);
-            turtle4.forward(30);
-            turtle5.forward(30);
-            turtle6.forward(30);
-            turtle7.forward(30);
-            turtle8.forward(30);
-            turtle9.forward(30);
-            Thread.sleep(1000);
-            turtle.turn(10);
-            turtle1.turn(10);
-            turtle2.turn(10);
-            turtle3.turn(10);
-            turtle4.turn(10);
-            turtle5.turn(10);
-            turtle6.turn(10);
-            turtle7.turn(10);
-            turtle8.turn(10);
-            turtle9.turn(10);
+            turtle.forward(f);
+            turtle1.forward(f);
+            turtle2.forward(f);
+            turtle3.forward(f);
+            turtle4.forward(f);
+            turtle5.forward(f);
+            turtle6.forward(f);
+            turtle7.forward(f);
+            turtle8.forward(f);
+            turtle9.forward(f);
+            Thread.sleep(100);
+            turtle.turn(d);
+            turtle1.turn(d);
+            turtle2.turn(d);
+            turtle3.turn(d);
+            turtle4.turn(d);
+            turtle5.turn(d);
+            turtle6.turn(d);
+            turtle7.turn(d);
+            turtle8.turn(d);
+            turtle9.turn(d);
+            d = d + 10;
+            f = f + 1;
+            count = count - 1;
     }
 }
 }
