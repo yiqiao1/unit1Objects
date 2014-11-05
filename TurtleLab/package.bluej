@@ -2,12 +2,12 @@
 dependency1.from=TurtleWorld
 dependency1.to=TurtleWorld
 dependency1.type=UsesDependency
-objectbench.height=100
-objectbench.width=662
-package.editor.height=400
+objectbench.height=76
+objectbench.width=967
+package.editor.height=424
 package.editor.width=869
-package.editor.x=324
-package.editor.y=245
+package.editor.x=12
+package.editor.y=12
 package.numDependencies=1
 package.numTargets=1
 package.showExtends=true
